@@ -1,0 +1,16 @@
+{
+    "name": "Biraul Academy",
+    "address": {
+        "line1": "Near Biraul Chowk",
+        "line2": "Biraul, Bihar 847203"
+    },
+    "contact": {
+        "phone": "+91 7667975976",
+        "email": "biraulacademy@gmail.com",
+        "admissionsEmail": "biraulacademy@gmail.com"
+    },
+    "timings": {
+        "office": "Mon - Sat 09:00 AM - 05:00 PM",
+        "school": "Mon - Sat 08:30 AM - 02:30 PM"
+    }
+}

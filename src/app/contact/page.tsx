@@ -1,4 +1,6 @@
 import styles from './page.module.css';
+import schoolInfo from '../data/schoolInfo.json';
+// ...
 
 export default function ContactPage() {
     return (
@@ -15,23 +17,22 @@ export default function ContactPage() {
                     <div className={styles.infoItem}>
                         <h3>Address</h3>
                         <p>
-                            Biraul Academy Campus<br />
-                            123 Education Lane, Knowledge Park<br />
-                            Cityville, State 12345
+                            {schoolInfo.name} Campus<br />
+                            {schoolInfo.address.line1}<br />
+                            {schoolInfo.address.line2}
                         </p>
                     </div>
                     <div className={styles.infoItem}>
                         <h3>Contact Info</h3>
                         <p>
-                            Phone: +1 (555) 123-4567<br />
-                            Email: admissions@biraulacademy.edu
+                            Phone: {schoolInfo.contact.phone}<br />
+                            Email: {schoolInfo.contact.admissionsEmail || schoolInfo.contact.email}
                         </p>
                     </div>
                     <div className={styles.infoItem}>
                         <h3>Office Hours</h3>
                         <p>
-                            Monday - Friday: 8:00 AM - 4:00 PM<br />
-                            Saturday: 9:00 AM - 1:00 PM
+                            {schoolInfo.timings.office}
                         </p>
                     </div>
                 </div>

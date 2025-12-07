@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import schoolInfo from '../data/schoolInfo.json';
 
 export default function Footer() {
     return (
@@ -26,10 +27,10 @@ export default function Footer() {
                 <div className={styles.column}>
                     <h3>Contact</h3>
                     <ul className={styles.linkList}>
-                        <li><Link href="/contact">Near Biraul Chowk</Link></li>
-                        <li>Biraul, Bihar</li>
-                        <li>+91 7667975976</li>
-                        <li>infobiraulacademy@gmail.com</li>
+                        <li><Link href="/contact">{schoolInfo.address.line1}</Link></li>
+                        <li>{schoolInfo.address.line2}</li>
+                        <li>{schoolInfo.contact.phone}</li>
+                        <li>{schoolInfo.contact.email}</li>
                     </ul>
                 </div>
             </div>

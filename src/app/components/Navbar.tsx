@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
+import schoolInfo from '../data/schoolInfo.json';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -16,6 +17,15 @@ export default function Navbar() {
 
     return (
         <nav className={`${styles.navContainer} ${scrolled ? styles.navScrolled : ''}`}>
+            {/* Top Bar - Contact Details */}
+            <div className={styles.topBar}>
+                <span>{schoolInfo.timings.office}</span>
+                <div className={styles.topBarContact}>
+                    <span>📞 {schoolInfo.contact.phone}</span>
+                    <span>✉️ {schoolInfo.contact.email}</span>
+                </div>
+            </div>
+
             <div className={styles.navContent}>
                 <Link href="/" className={styles.logo}>
                     Biraul Academy
