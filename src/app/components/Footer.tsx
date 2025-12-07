@@ -26,10 +26,10 @@ export default function Footer() {
                 <div className={styles.column}>
                     <h3>Contact</h3>
                     <ul className={styles.linkList}>
-                        <li><Link href="/contact">123 Education Lane</Link></li>
-                        <li>Cityville, State 12345</li>
-                        <li>+1 (555) 123-4567</li>
-                        <li>info@prestigeacademy.edu</li>
+                        <li><Link href="/contact">Near Biraul Chowk</Link></li>
+                        <li>Biraul, Bihar</li>
+                        <li>+91 7667975976</li>
+                        <li>infobiraulacademy@gmail.com</li>
                     </ul>
                 </div>
             </div>
