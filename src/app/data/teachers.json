@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Mrs. Priya Sharma",
+        "role": "PGT Mathematics",
+        "subject": "Mathematics",
+        "image": "/images/teachers/math.png"
+    },
+    {
+        "id": 2,
+        "name": "Mr. Rajesh Patel",
+        "role": "PGT Physics",
+        "subject": "Physics",
+        "image": "/images/teachers/science.png"
+    },
+    {
+        "id": 3,
+        "name": "Mrs. Anjali Gupta",
+        "role": "TGT English",
+        "subject": "English Core",
+        "image": "/images/teachers/english.png"
+    },
+    {
+        "id": 4,
+        "name": "Mr. Vikram Singh",
+        "role": "Physical Director",
+        "subject": "Physical Education",
+        "image": "/images/teachers/sports.png"
+    }
+]

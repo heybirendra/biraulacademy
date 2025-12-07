@@ -1,0 +1,84 @@
+.section {
+    padding: 4rem 2rem;
+    background: relative;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.board {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.noticeList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: scrollUp 20s linear infinite;
+}
+
+.noticeList:hover {
+    animation-play-state: paused;
+}
+
+.card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 0.5rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateX(10px);
+}
+
+.card[data-type="Important"] {
+    border-left-color: var(--accent-gold);
+}
+
+.card[data-type="Event"] {
+    border-left-color: var(--accent-teal);
+}
+
+.card[data-type="Academic"] {
+    border-left-color: var(--accent-blue);
+}
+
+.date {
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+
+    /* Note: Logic requires duplicating items to loop smoothly, dealt with in component */
+}
